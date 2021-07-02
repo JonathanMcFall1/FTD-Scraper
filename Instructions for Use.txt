@@ -1,0 +1,21 @@
+FTD Scraper v3
+Used to scrape FTD data for any ticker dating back to 2004 (All publicly available FTD data taken from www.SEC.gov)
+
+
+Pre-requisites:
+1. Python 3.6 or greater (https://www.python.org/downloads/windows/)
+2. Pandas module (After downloading Python, open command prompt and type "pip3 install pandas")
+
+Using the scraper:
+1. Open the text file 'tickerList.txt' and type the list of tickers you want the FTD data for separated by ", " (There should be an example when you open it for the first time)
+2. Save the text file
+3. Run 'FTD Scraper v3.py'
+4. Let it work, there's hundreds of thousands of lines of text to work through. Usually takes about 20 seconds per ticker.
+5. The CSV's will output to the outputs folder
+
+Keeping this scraper up to date:
+ - The SEC releases FTD data on a bi-monthly basis offset by half a month. Ex. The second half of June's data will be released halfway through July.
+ - You can download the latest file every half month and rename the text file to match the format found in the FTD data folder. (Format: 'YYYYMMx'    x is either a or b depending on first(a) or second(b) half of month)
+ - Once you have the text file downloaded and renamed, throw it in the FTD data folder, and if you sort by name it should be at the bottom. 
+
+Any questions: pm u/Jonathan_McFall
